@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_cc8626e4642210e4c68694ceed287fa6 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+    
+                    <style>
+                        .foliumpopup {
+                            background-color: yellow;
+                        }
+                       .foliumpopup table{
+                            margin: auto;
+                        }
+                        .foliumpopup tr{
+                            text-align: left;
+                        }
+                        .foliumpopup th{
+                            padding: 2px; padding-right: 8px;
+                        }
+                    </style>
+            
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_cc8626e4642210e4c68694ceed287fa6" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_cc8626e4642210e4c68694ceed287fa6 = L.map(
+                "map_cc8626e4642210e4c68694ceed287fa6",
+                {
+                    center: [37.0, 10.0],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "maxBounds": [
+[
+-44,
+-130,
+],
+[
+74,
+150,
+],
+],
+  "zoom": 3,
+  "zoomControl": true,
+  "preferCanvas": false,
+  "interactive": true,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_0e036d76382c470878344110e1515292 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_0e036d76382c470878344110e1515292.addTo(map_cc8626e4642210e4c68694ceed287fa6);
+        
+    
+
+        function geo_json_8a16c6b321dccd7bd8ea3314196398d0_onEachFeature(feature, layer) {
+
+            layer.on({
+            });
+        };
+        var geo_json_8a16c6b321dccd7bd8ea3314196398d0 = L.geoJson(null, {
+                onEachFeature: geo_json_8a16c6b321dccd7bd8ea3314196398d0_onEachFeature,
+            
+            ...{
+}
+        });
+
+        function geo_json_8a16c6b321dccd7bd8ea3314196398d0_add (data) {
+            geo_json_8a16c6b321dccd7bd8ea3314196398d0
+                .addData(data);
+        }
+            geo_json_8a16c6b321dccd7bd8ea3314196398d0_add({"bbox": [-101.228311, 19.032977, 24.819352, 60.218099], "features": [{"bbox": [2.173976, 48.702411, 2.173976, 48.702411], "geometry": {"coordinates": [2.173976, 48.702411], "type": "Point"}, "id": "0", "properties": {"address": "Universit\u00e9 Paris-Sud"}, "type": "Feature"}, {"bbox": [-2.230653, 53.467135, -2.230653, 53.467135], "geometry": {"coordinates": [-2.230653, 53.467135], "type": "Point"}, "id": "1", "properties": {"address": "University of Manchester"}, "type": "Feature"}, {"bbox": [2.334325, 48.835962, 2.334325, 48.835962], "geometry": {"coordinates": [2.334325, 48.835962], "type": "Point"}, "id": "2", "properties": {"address": "Observatoire de Paris"}, "type": "Feature"}, {"bbox": [2.174761, 48.698987, 2.174761, 48.698987], "geometry": {"coordinates": [2.174761, 48.698987], "type": "Point"}, "id": "3", "properties": {"address": "Institut d\u0027Astrophysique Spatiale"}, "type": "Feature"}, {"bbox": [-101.228311, 19.64683, -101.228311, 19.64683], "geometry": {"coordinates": [-101.228311, 19.64683], "type": "Point"}, "id": "4", "properties": {"address": "Instituto de Radioastronom\u00eda y Astrof\u00edsica (UNAM)"}, "type": "Feature"}, {"bbox": [-98.316397, 19.032977, -98.316397, 19.032977], "geometry": {"coordinates": [-98.316397, 19.032977], "type": "Point"}, "id": "5", "properties": {"address": "Instituto Nacional de Astrof\u00edsica, \u00d3ptica y Electr\u00f3nica"}, "type": "Feature"}, {"bbox": [24.393271, 60.218099, 24.393271, 60.218099], "geometry": {"coordinates": [24.393271, 60.218099], "type": "Point"}, "id": "6", "properties": {"address": "Mets\u00e4hovi Radio Observatory"}, "type": "Feature"}, {"bbox": [24.819352, 60.18714, 24.819352, 60.18714], "geometry": {"coordinates": [24.819352, 60.18714], "type": "Point"}, "id": "7", "properties": {"address": "Aalto University"}, "type": "Feature"}], "type": "FeatureCollection"});
+        geo_json_8a16c6b321dccd7bd8ea3314196398d0.setStyle(function(feature) {return feature.properties.style;});
+
+        
+    
+    geo_json_8a16c6b321dccd7bd8ea3314196398d0.bindPopup(
+    function(layer){
+    let div = L.DomUtil.create('div');
+    
+    let handleObject = feature => {
+        if (feature === null) {
+            return '';
+        } else if (typeof(feature)=='object') {
+            return JSON.stringify(feature);
+        } else {
+            return feature;
+        }
+    }
+    let fields = ["address"];
+    let aliases = ["Place"];
+    let table = '<table>' +
+        String(
+        fields.map(
+        (v,i)=>
+        `<tr>
+            <th>${aliases[i].toLocaleString()}</th>
+            
+            <td>${handleObject(layer.feature.properties[v]).toLocaleString()}</td>
+        </tr>`).join(''))
+    +'</table>';
+    div.innerHTML=table;
+    
+    return div
+    }
+    ,{
+  "className": "foliumpopup",
+});
+                     
+    
+            geo_json_8a16c6b321dccd7bd8ea3314196398d0.addTo(map_cc8626e4642210e4c68694ceed287fa6);
+        
+    
+            map_cc8626e4642210e4c68694ceed287fa6.fitBounds(
+                [[19.032977, -101.228311], [60.218099, 24.819352]],
+                {"padding": [30, 30]}
+            );
+        
+</script>
+</html>
